@@ -1,0 +1,54 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/",
+                    "${workspaceFolder}/Core/Inc",
+                    "${workspaceFolder}/bsp_key",
+                    "${workspaceFolder}/Core/Src",
+                    "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc",
+                    "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+                    "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                    "${workspaceFolder}/Drivers/CMSIS/Include",
+                    // "C:/Apps/Keil/ARM/ARMCC/include",
+                    "C:/Apps/STM32DevelopTools/GNU Arm Embedded Toolchain/9 2020-q2-update/arm-none-eabi/include",
+                    "C:/Apps/STM32DevelopTools/GNU Arm Embedded Toolchain/9 2020-q2-update/arm-none-eabi/include/c++/9.3.1",
+                    "${workspaceFolder}/modules",
+                "${workspaceFolder}/modules/keyboard",
+                "${workspaceFolder}/USB_DEVICE/App",
+                    "${workspaceFolder}/USB_DEVICE/Target"
+            ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                    "${workspaceFolder}/",
+                    "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/bsp_key",
+                "${workspaceFolder}/Core/Src",
+                "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc",
+                "${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Include",
+                "C:/Apps/STM32DevelopTools/GNU Arm Embedded Toolchain/9 2020-q2-update/arm-none-eabi/include",
+                "C:/Apps/STM32DevelopTools/GNU Arm Embedded Toolchain/9 2020-q2-update/arm-none-eabi/include/c++/9.3.1",
+                "C:/Apps/STM32DevelopTools/GNU Arm Embedded Toolchain/9 2020-q2-update/arm-none-eabi/include/c++/9.3.1/arm-none-eabi",
+                "${workspaceFolder}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+                "${workspaceFolder}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc",
+                "${workspaceFolder}/modules",
+                "${workspaceFolder}/modules/keyboard",
+                "${workspaceFolder}/USB_DEVICE/App",
+                "${workspaceFolder}/USB_DEVICE/Target"
+            ],
+            "windowsSdkVersion": "10.0.18362.0",
+            // "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/bin/Hostx64/x64/cl.exe",
+            "compilerPath": "C:/Apps/STM32DevelopTools/GNU Arm Embedded Toolchain/9 2020-q2-update/bin/arm-none-eabi-gcc.exe",
+            // "cStandard": "c17",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

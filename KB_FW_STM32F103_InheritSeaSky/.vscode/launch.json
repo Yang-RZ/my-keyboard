@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/KB_FW_STM32F103_InheritSeaSky.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "svdFile": "C:/Users/xxxxxxxx/.vscode/extensions/marus25.cortex-debug-dp-stm32f1-1.0.0/data/STM32F103xx.svd",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "configFiles": [
+                "stlink.cfg",
+                "stm32f1x.cfg"
+            ]
+        }
+    ]
+}
