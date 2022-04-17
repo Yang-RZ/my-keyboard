@@ -37,7 +37,7 @@ SOFTWARE.
 
 #define TIME_CYCLE  7	    //MAX_ROW*READ_DELAY_TIME 单位ms
 
-#define TIME_RESTER_COUNT  2	//定义按键复位时间，一般来说按键弹起最好比按键按下快
+#define TIME_RESTER_COUNT  1	//定义按键复位时间，一般来说按键弹起最好比按键按下快
 
 #define TIME_PRESS_COUNT   2    //实际时间 TIME_CYCLE*TIME_P_COUNT (单位ms)确认为短按时间
 #define TIME_PRESS_L_COUNT 10	//实际时间 TIME_CYCLE*TIME_L_COUNT (单位ms)确认为长按时间
