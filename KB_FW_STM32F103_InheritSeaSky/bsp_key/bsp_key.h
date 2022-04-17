@@ -40,7 +40,7 @@ SOFTWARE.
 #define TIME_RESTER_COUNT  2	//定义按键复位时间，一般来说按键弹起最好比按键按下快
 
 #define TIME_PRESS_COUNT   2    //实际时间 TIME_CYCLE*TIME_P_COUNT (单位ms)确认为短按时间
-#define TIME_PRESS_L_COUNT 30	//实际时间 TIME_CYCLE*TIME_L_COUNT (单位ms)确认为长按时间
+#define TIME_PRESS_L_COUNT 10	//实际时间 TIME_CYCLE*TIME_L_COUNT (单位ms)确认为长按时间
 #define TIME_MAX_COUNT     300  //定义按键最长计数时间
 
 #define KEY_NO_USER 255

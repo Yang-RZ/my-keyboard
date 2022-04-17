@@ -579,11 +579,10 @@ uint8_t key_update(uint8_t *pTxbuf,key_info_t *key_cfg)
         {
             mx_key_init_layer1(key_cfg);
         }
-+++++++++++
 
         key_cfg->key_is_press[KEY_RIGHT_CONTROL].press_it.time_count = 0 ;
         key_cfg->key_is_press[KEY_RIGHT_CONTROL].press_it.states = KEY_UPSPRING;
-          ->keyboard.byte0_off.Right_Control = 0;
+        key_cfg->keyboard.byte0_off.Right_Control = 0;
         key_cfg->keyboard.byte0_off.Right_Control_used_it = 1;
         HAL_Delay(100);
     }
