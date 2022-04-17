@@ -24,6 +24,8 @@ SOFTWARE.
 #include "bsp_key.h"
 void key_info_get(key_info_t *key_cfg);
 
+// #define WITH_MULTIMEDIA_KEY
+
 void mx_key_init(key_info_t *key_cfg)
 {
     /* key seg gpio 配置*/
@@ -570,6 +572,8 @@ uint8_t key_update(uint8_t *pTxbuf,key_info_t *key_cfg)
 
     if(key_cfg->keyboard.byte0_off.Right_Control == 1)
     {
+        #ifdef WITH_MULTIMEDIA_KEY
+        
         // pTxbuf[0]|= 1<<Right_Control;
         if (key_cfg->current_layer == 1)
         {
@@ -585,6 +589,13 @@ uint8_t key_update(uint8_t *pTxbuf,key_info_t *key_cfg)
         key_cfg->keyboard.byte0_off.Right_Control = 0;
         key_cfg->keyboard.byte0_off.Right_Control_used_it = 1;
         HAL_Delay(100);
+        #else
+        
+        key_pressed = 1;
+        pTxbuf[0]|= 1<<Right_Control;
+        key_cfg->keyboard.byte0_off.Right_Control_used_it = 1;
+
+        #endif // WITH_MULTIMEDIA_KEY
     }
 
     if(key_cfg->keyboard.byte0_off.Right_Shift == 1)
