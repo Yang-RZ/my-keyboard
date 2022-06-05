@@ -11,6 +11,8 @@
   - 最初设计不支持切换层, 用RightControl作为切换键的话会和Ctrl+-快捷键冲突, 先取消这个功能了, 可以在代码里添加宏WITH_MULTIMEDIA_KEY来启用.
 * 成品图
   ![Img](KB_FW_STM32F103_InheritSeaSky/Image/Photo.jpg)
+* 重量
+  - 625.5g
 
 * 成本：
   - STM32F103最小系统板，20
