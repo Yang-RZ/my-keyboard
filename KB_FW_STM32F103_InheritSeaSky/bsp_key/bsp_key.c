@@ -623,17 +623,18 @@ uint8_t key_update(uint8_t *pTxbuf,key_info_t *key_cfg)
 	/*BYTE2--BYTE7 普通按键 需要区分长按短按*/
     for(i=0; i<6; i++)
     {
-        if((key_cfg->keyboard.used_it[i]==0)&&(key_cfg->keyboard.keypad_status[i] == KEYBOARD_PRESS))
-        {
-            key_pressed = 1;
-            pTxbuf[i+2]=key_cfg->keyboard.keypad[i];
-            key_cfg->keyboard.used_it[i] = 1;
-        }
-        if(key_cfg->keyboard.keypad_status[i] == KEYBOARD_PRESS_L_TIME)
-        {
-            key_pressed = 1;
-            pTxbuf[i+2]=key_cfg->keyboard.keypad[i];
-        }
+        // if((key_cfg->keyboard.used_it[i]==0)&&(key_cfg->keyboard.keypad_status[i] == KEYBOARD_PRESS))
+        // {
+        //     key_pressed = 1;
+        //     pTxbuf[i+2]=key_cfg->keyboard.keypad[i];
+        //     key_cfg->keyboard.used_it[i] = 1;
+        // }
+        // if(key_cfg->keyboard.keypad_status[i] == KEYBOARD_PRESS_L_TIME)
+        // {
+        //     key_pressed = 1;
+        //     pTxbuf[i+2]=key_cfg->keyboard.keypad[i];
+        // }
+        pTxbuf[i+2]=key_cfg->keyboard.keypad[i];
     }
 
     return key_pressed;
